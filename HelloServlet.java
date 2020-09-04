@@ -16,7 +16,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        // super.doGet(req, resp);
         Map<String ,Object> map=new HashMap<>();
-        map.put("name","sfss");
+        map.put("name","aaa");
         String json=JSONObject.toJSONString(map);
         resp.getWriter().print(json);
         resp.getWriter().flush();
